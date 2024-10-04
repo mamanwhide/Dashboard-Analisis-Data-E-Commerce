@@ -7,7 +7,7 @@ import folium
 from streamlit_folium import folium_static
 
 # Memuat dataset
-merged_df = pd.read_csv('merged_dataset.csv')
+merged_df = pd.read_csv('dashboard/merged_dataset.csv')
 merged_df['order_purchase_timestamp'] = pd.to_datetime(merged_df['order_purchase_timestamp'])
 
 # Judul dan sidebar untuk filter
